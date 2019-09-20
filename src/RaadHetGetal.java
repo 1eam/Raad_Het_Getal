@@ -5,28 +5,32 @@ public class RaadHetGetal {
 	public static void main(String[] args) {
 		Scanner textInput = new Scanner(System.in);
 
-		System.out.print("raad het getal ");
-		int playerInput = textInput.nextInt();
-		int randomNumber = (int)(Math.random()*100);
 		boolean gameWon = false;
+		int randomNumber = (int)(Math.random()*100);
+
 
 		//TODO loopen als condition false blijft
-		if (playerInput == randomNumber) gameWon = true; {
-			System.out.println("Men You guessed it! Whoo...");
-		}
 
-		if (playerInput < randomNumber) {
-			System.out.print("Het getal is hoger");
-		}
+		if (gameWon == false) for (int i = 0; i < 200; i++){
+			System.out.print("raad het getal ");
+			int playerInput = textInput.nextInt();
 
-		else if (playerInput > randomNumber) {
-			System.out.print("Het getal is lager");
-		}
-		
-		if (gameWon = false) {
-			// execute lijn 8. loop of break
-		}
+			if (playerInput == randomNumber) {
+				gameWon = true;
+			}
 
+			else if (playerInput < randomNumber)
+				System.out.println("Het getal is hoger");
+
+
+			else if (playerInput > randomNumber)
+				System.out.println("Het getal is lager");
+
+
+			if (gameWon == true) {
+				System.out.println("Men You guessed it! Whoo...");
+			}
+		}
 
 		/*if "playerInput" > "randomNumber"{
 		 System.out.print("Het getal is lager");

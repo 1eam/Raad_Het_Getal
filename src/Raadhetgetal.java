@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Raadhetgetal {
+public class RaadHetGetal {
 
 	public static void main(String[] args) {
 		Scanner textInput = new Scanner(System.in);

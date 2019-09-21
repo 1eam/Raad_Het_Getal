@@ -6,7 +6,7 @@ public class RaadHetGetal {
 		Scanner textInput = new Scanner(System.in);
 
 		boolean gameWon = false;
-		int randomNumber = (int)(Math.random()*100);
+		int randomNumber = (int)(Math.random()*1000);
 
 
 		//TODO loopen als condition false blijft
@@ -17,6 +17,7 @@ public class RaadHetGetal {
 
 			if (playerInput == randomNumber) {
 				gameWon = true;
+			randomNumber = (int)(Math.random()*1000);
 			}
 
 			else if (playerInput < randomNumber)
@@ -29,6 +30,7 @@ public class RaadHetGetal {
 
 			if (gameWon == true) {
 				System.out.println("Men You guessed it! Whoo...");
+				gameWon = false;
 			}
 		}
 

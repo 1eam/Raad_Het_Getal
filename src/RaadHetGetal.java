@@ -11,7 +11,7 @@ public class RaadHetGetal {
 
 		//TODO loopen als condition false blijft
 
-		if (gameWon == false) for (int i = 0; i < 200; i++){
+		if (gameWon == false) for (int i = 0; i >= 0; i++){
 			System.out.print("raad het getal ");
 			int playerInput = textInput.nextInt();
 

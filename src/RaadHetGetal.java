@@ -17,7 +17,7 @@ public class RaadHetGetal {
 
 			if (playerInput == randomNumber) {
 				gameWon = true;
-			randomNumber = (int)(Math.random()*1000);
+				randomNumber = (int)(Math.random()*1000);
 			}
 
 			else if (playerInput < randomNumber)
@@ -30,6 +30,7 @@ public class RaadHetGetal {
 
 			if (gameWon == true) {
 				System.out.println("Men You guessed it! Whoo...");
+				System.out.println("It took you " + i + " try's");
 				gameWon = false;
 			}
 		}

@@ -37,7 +37,7 @@ public class RaadHetGetal {
 			if (gameWon == true) {
 				System.out.println("\n\t\t [  You guessed it!  ]");
 				System.out.println("\t\t [It took you " + playerTries + " tries]");
-				System.out.println("\n\t\t ~~Rematch 1 = Yes/ 2 = N0~~");
+				System.out.println("\n\t\t ~~[1] Rematch~~ \n\t\t ~~[2] Exit   ~~");
 				int playerInput = numberScanner.nextInt();
 
 				if (playerInput == 1) {

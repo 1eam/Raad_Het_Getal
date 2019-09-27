@@ -18,24 +18,19 @@ public class RaadHetGetal {
 
 					System.out.print("\nPlayer 1 raad het getal ");
 					int playerInput = numberScanner.nextInt();
-					try {
-						if (playerInput < randomNumber) {
-							playerTries++;
-							System.out.println("[Het getal is hoger]");
-						}
-						if (playerInput > randomNumber) {
-							playerTries++;
-							System.out.println("[Het getal is lager]");
-						}
-					} catch (Exception e) {
-						System.out.println("Enter an integer");
-					}
 
+					if (playerInput < randomNumber) {
+						playerTries++;
+						System.out.println("[Het getal is hoger]");
+					}
+					if (playerInput > randomNumber) {
+						playerTries++;
+						System.out.println("[Het getal is lager]");
+					}
 					if (playerInput == randomNumber) {
 						gameWon = true;
 						break;
 					}
-
 				}
 			}
 
@@ -57,7 +52,4 @@ public class RaadHetGetal {
 		}
 	}
 }
-
-// code cleanup
-// trying to add try's
-// try's stay at 0
+//TODO: Construct Playerclass

@@ -16,21 +16,26 @@ public class RaadHetGetal {
 			if (gameWon == false) {
 				for (int i = 0; i >= 0; i++) {
 
-					System.out.print("\nraad het getal ");
+					System.out.print("\nPlayer 1 raad het getal ");
 					int playerInput = numberScanner.nextInt();
+					try {
+						if (playerInput < randomNumber) {
+							playerTries++;
+							System.out.println("[Het getal is hoger]");
+						}
+						if (playerInput > randomNumber) {
+							playerTries++;
+							System.out.println("[Het getal is lager]");
+						}
+					} catch (Exception e) {
+						System.out.println("Enter an integer");
+					}
 
-					if (playerInput < randomNumber) {
-						playerTries++;
-						System.out.println("[Het getal is hoger]");
-					}
-					if (playerInput > randomNumber) {
-						playerTries++;
-						System.out.println("[Het getal is lager]");
-					}
 					if (playerInput == randomNumber) {
 						gameWon = true;
 						break;
 					}
+
 				}
 			}
 

@@ -1,3 +1,4 @@
+package raadhetgetal;
 import java.util.Scanner;
 
 public class RaadHetGetal {
@@ -8,7 +9,7 @@ public class RaadHetGetal {
 		Scanner decisionScanner = new Scanner(System.in);
 
 		boolean gameWon = false;
-		int randomNumber = (int) (Math.random() * 2);
+		int randomNumber = (int) (Math.random() * 100);
 		int round = 2;
 		int playerTries = 1;
 
@@ -43,13 +44,15 @@ public class RaadHetGetal {
 				if (playerInput == 1) {
 					System.out.println("\n/// round " + round++ + " \\\\\\");
 					playerTries = 1;
-					randomNumber = (int) (Math.random() * 2);
+					randomNumber = (int) (Math.random() * 100);
 					gameWon = false;
 				} else if (playerInput == 2) {
 					System.out.println("TODO: back to Keuzemenu");
+					gameWon = false;
 				}
 			}
 		}
 	}
 }
 //TODO: Construct Playerclass
+//Cant make unit tests for this
